@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>login - Gamehub</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body class="auth-body">
+        <div class="auth-bg">
+            <div class="auth-card">
+                <h1 class="logo">
+                    Gamestore
+                </h1>
+                <p class="welcome">Welcome back</p>
+                <form>
+                    <div class="input-box">
+                        <i class="fa-solid fa-envelop"></i>
+
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-box">
+                        <i class="fa-solid fa-lock"></i>
+                        <input id="password" type="password" placeholder="Password" required>
+
+                        <i class="fa-solid fa-eye"
+                        id="togglePassword"></i>
+                    </div>
+                    <div class="options">
+                        <label>
+                            <input type="checkbox">
+                            Remember Me
+                        </label>
+                        <a href="#">
+                            Forgot Password?
+                        </a>
+                    </div>
+                    <button class="login-btn">Login </button>
+                </form>
+                <div class="divider">
+                    OR
+                </div>
+                <button class="social google">
+                    <i class="fa-brands fa-google"></i>
+                    Continue with Google
+                </button>
+                <button class="social github">
+                    <i class="fa-brands fa-github"></i>
+                    Continue with Github
+                </button>
+                <p class="bottom-text">
+                    Don't have an account?
+                    <a href="signup.html">Create one</a>
+                </p>
+            </div>
+            </div>    
+            <script>
+                const password = document.getElementById
+                ("password");
+
+                const toggle = document.getElementById
+                ("togglePassword");
+
+                toggle.onclick = () => {
+                    if(password.type==="password"){
+                        password.type="text";
+                        toggle.className="fa-solid fa-eye-slash";
+                    }
+
+                    else {
+                        password.type="password";
+                        toggle.className="fa-solid fa-eye";
+                    }
+                }
+            </script>
+     </body>
+</html>
